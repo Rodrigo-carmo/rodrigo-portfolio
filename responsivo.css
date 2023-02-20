@@ -1,0 +1,224 @@
+@media screen and (max-width: 883px) {
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+
+.logo-logo{
+    position: relative;
+    top: 5px;
+    right: -80px;
+    margin: auto auto;
+}
+
+.logo-img {
+    margin-top: -10px;
+    width: 95px;
+    height: 70px;
+    right: 50px;
+}
+
+
+.hamburguer {
+    position: relative;
+    display: block;
+    left: 20px;
+    
+}
+
+.hamburguer.active .bar:nth-child(2) {
+   opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-bar {
+    position: relative;
+    left: 10px;
+}
+
+
+.nav-menu {
+    position: relative;
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: #101b15;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+    
+}
+
+.nav-item{
+    padding: 3px;    
+}
+.nav-link{
+    font-size: 0.8rem;
+    
+}
+.nav-menu.active{
+    left: 0;
+}
+
+
+.container-portifolio {
+    flex-wrap: wrap-reverse;
+    height: 100%;
+    width: 100%;
+}
+
+.container-titulo {
+    text-align: center;
+    width: 100%;  
+}
+
+.scroll-nome {
+    position: relative;
+    top: 150px;
+}
+
+.container-h1, .container-span {
+    position: relative;
+    top: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.container-p {
+    text-align: center;
+}
+
+.scroll-button{
+    position: relative;
+    top: 150px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 320px;
+}
+
+.btn-download {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-contato {
+    position: relative;
+    width: 100%;
+}
+
+.container-foto {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    height: 220px;
+}
+
+.foto img {
+    position: relative;
+    top: 125px;
+    width: 200px;
+    height: 60%;
+}
+
+.sobre-mim {
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-mim-texto p {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.sobre-mim-texto .sobre-mim-texto2 {
+    font-size: 1.2rem;
+}
+
+.habilidades {
+    width: 100%;    
+    height: 750px;
+}
+
+.scroll-habilidades {
+    height: auto;
+}
+
+.habilidades-div {
+    margin-top: -60px;
+    width: 100%;
+}
+
+.habilidades-html {
+    width: 80px;
+    height: 100px;
+}
+
+.habilidades-html img {
+    width: 60px;
+    height: 50px;
+}
+
+.habilidades-h3 {
+    font-size: 0.5rem;
+
+}
+
+
+.meus-projetos{
+    width: 100%;
+}
+
+.contatos {
+    position: relative;
+    top: 50px;
+}
+
+.contatos-h2 {
+    position: relative;
+    top: 40px;
+}
+
+.contatos-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contatos-scroll {
+    width: 100%;
+    padding: 10px;
+}
+
+.contatos-scroll img {
+    width: 30px;
+    
+}
+
+.contatos-scroll .span .contatos-scroll .span .p {
+    font-size: 0.8rem;
+}
+
+.contatos-scroll .p {
+    font-size: 0.8rem;
+}
+
+
+}

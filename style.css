@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+   
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #13131f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+
+html {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* overflow: hidden; */
+    /* scroll-behavior: smooth;    */
+    overflow-x: hidden; 
+}
+
+body{
+    /* background-color: #ededed; */
+    height: 100vh;
+    background-color: #022c16;;
+    /* transition: background 0.2s linear; */
+    
+}
+
+/* INÍCIO CABEÇALHO*/
+.header {
+    border-bottom: 1px solid #cccccc63;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #022c16;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: -10px;
+}
+
+.logo {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.logo-logo {
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.logo-img {
+    position: relative;
+    top: 0px;
+    width: 100px;
+    height: 80px;
+}
+
+.logo-link {
+    color: #ccc;
+}
+
+.nav-bar {
+    margin-right: 100px;
+
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item:hover{
+    transform: scale(1.2);
+    transition: .5s linear;
+}
+
+#sobre-mim{
+    transition: .2s linear;
+}
+
+.nav-link {
+    color: #ccc;
+    font-weight: 600;  
+    font-size: 1rem;  
+}
+
+.nav-link:hover{
+    color: #8357ea;
+    /* font-size: 1.5rem; */
+    transform: scale(1.1);   
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* MODO CLARO | ESCURO */
+body.dark{
+    background: #fff;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    /* background-color: #022c16;; */
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    /* position: relative; */
+    width: 50px;
+    transform: scale(1.5);
+    
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun{
+    color: #f39c12;
+}
+/* MODO CLARO | ESCURO */
+
+
+
+/* FIM CABEÇALHO*/
+
+
+/*  ++++++++++ INÍCIO CONTAINER ++++++++++ */
+
+/* INÍCIO PROJETOS */
+
+.container {
+    margin-top: 130px;
+    height: 600px;
+}
+.container-titulo{
+    top: 100px;
+}
+
+.scroll-1 {
+    visibility: hidden;
+}
+
+
+.portifolio {
+    text-align: center;
+       
+}
+
+
+.portifolio-h1{
+    color: #ccc;
+    position: relative;
+}
+
+.portifolio-h1:hover {
+    color: #714b96;
+    transition: .5s;
+}
+
+/* FIM PORTIFÓLIO */
+
+
+/* INÍCIO PRINCIPAL */
+.container-portifolio { 
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.container-h1{
+    color: #ccc;
+    font-size: 3.2rem;
+}
+
+.container-span{
+    color: #815ed6;
+    font-size: 3.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-p{
+    color: #888389;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.btn-download{
+    position: relative;
+    top: 10px;
+    color: #ccc;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 50px;
+    width: 160px;
+    background: linear-gradient(to right, blue, rgb(108, 108, 150));
+    margin-right: 30px;
+    border: none;
+    
+}
+.btn-download:hover {
+    transform: scale(1.1);
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+.btn-contato {
+    position: relative;
+    top: 10px;
+    color: #ccc;
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 50px;
+    background: none;
+    border: 1px solid #714b96;
+}
+
+.btn-contato:hover {
+    transform: scale(1.1);
+    transition: 500ms linear;
+    background-color: #714b96;
+    cursor: pointer;
+}
+
+.container-foto {
+    position: relative;
+    top: 90px;
+    width: 30%;
+}
+
+.foto img{
+    background-color: #815ed6;
+    border-radius: 650px 135px 800px 360px;
+    background: linear-gradient(to right, blue, rgb(127, 127, 170));
+    width: 100%;
+}
+
+.foto img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s linear;
+
+}
+
+
+/* INÍCIO SOBRE MIM */
+.sobre-mim {
+    height: 600px;
+    height: 720px;
+}
+.sobre-mim-texto {
+      text-align: center;
+      height: 100%;
+}
+
+.sobre-mim-texto1{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: #ccc;
+    font-size: 2.6rem;
+    bottom: 50px;   
+}
+
+.sobre-mim-texto2 {
+    color: #ccc;
+    font-size: 2.6rem;
+    width: 100%;
+    margin-top: 10px;    
+}
+
+.sobre-mim-texto p{
+    color: #888389;
+    font-size: 1.7rem;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 100px;
+}
+
+/* FIM SOBRE MIM */
+
+/* INÍCIO HABILIDADES */
+
+.habilidades{
+    text-align: center;
+    color: #ccc;
+    height: 100%; 
+}
+
+.habilidades-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;    
+    top: 180px;
+    height: 100%;
+}
+
+
+.habilidades-h1{
+    font-size: 2.6rem;
+    position: relative;
+    top: 100px;
+}
+
+
+.habilidades-html {
+    border-bottom: 4px solid #3f3457;
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    /* background-color: #022c16; */
+    border-radius: 50px 0px 0px 00px;
+    margin: 25px;
+}
+
+.habilidades-html:hover {
+    transform: scale(1.2);
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.habilidades-h3 {
+    color: #ccc;
+    font-size: 1.1rem;
+    position: relative;
+    top: 10px;
+}
+
+.habilidades-div img {
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: 80px;
+    color: #815ed6;
+}
+
+
+/* FIM HABILIDADES */
+/* INÍCIO PROJETOS */
+
+.projetos {
+    margin-top: 300px;
+}
+
+.projetos-feitos {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+.meus-projetos {
+    position: relative;
+    top: 150px;
+    margin: 20px;
+    width: 40%;
+}
+
+.meus-projetos img {
+    height: 360px;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.projetos-h2 {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    color: #ccc;
+    font-size: 2.6rem;
+}
+
+.meus-projetos:hover {
+    cursor: pointer;      
+}
+
+
+
+#img-mysql{
+    width: 150px;
+}
+
+.meus-projetos img:hover{
+    opacity: 0.9;
+}
+
+.projetos-h4, .projetos-p {
+    position: relative;
+    font-size: 1.3rem;
+    color: #714b96;
+    text-align: center;    
+}
+
+.projetos-h4:hover, .projetos-p:hover {
+    color: #ccc;
+}
+
+/* INÍCIO PROJETOS */
+
+
+/* INÍCIO RODAPÉ */
+
+.contatos {
+    margin-top: 130px;
+    text-align: center;
+    height: 100%;
+}
+
+.contatos h2 {
+    margin-top: 250px;
+    color: white;
+}
+
+.contatos-box {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    width: 70%;
+    height: 320px;
+}
+
+.contatos-scroll a{
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.contatos-scroll:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .2s linear;
+}
+
+.contatos-scroll a .span {
+    display: block;
+    color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.contatos-scroll img {
+    width: 35px;
+}
+
+
+.contatos-scroll a p{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+/* FIM RODAPÉ */
+
+
+
+
+
+
+
+/* FIM CONTAINER*/
